@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" xml:space="preserve">
+	<circle cx="256" cy="256" r="256" fill="#3b4c8d" data-original="#ffd17e"/>
+	<path fill="#111536" d="m77 372.07 136.915 136.467A258 258 0 0 0 256 512c141.385 0 256-114.615 256-256a257.7 257.7 0 0 0-3.502-42.322L371.371 77z" data-original="#ffb739"/>
+	<path fill="#09213d" d="M329.852 414.023a20.91 20.91 0 0 1-20.692-17.527l-7.566-45.402h-66.571v73.418h94.829z" data-original="#09213d"/>
+	<path fill="#233952" d="m210.406 351.094-7.566 45.401a20.91 20.91 0 0 1-20.692 17.528v10.488H256v-73.418z" data-original="#233952"/>
+	<path fill="#89c1ff" d="M435 319.629V139.93H256v221.652z" data-original="#89c1ff"/>
+	<path fill="#bfdcff" d="M256 139.93H77v179.699l179 41.953z" data-original="#bfdcff"/>
+	<path fill="#233952" d="M371.371 414.023H256l-20.977 10.489L256 435h115.371z" data-original="#233952"/>
+	<path fill="#3d5168" d="M140.629 414.023H256V435H140.629z" data-original="#3d5168"/>
+	<path fill="#0572eb" d="M371.371 224.535V77H256l-41.953 179z" data-original="#0572eb"/>
+	<path fill="#1e8aff" d="M256 77H140.629v147.535L256 256z" data-original="#1e8aff"/>
+	<path fill="#dae0e7" d="m256 224.535-52.441 105.582h167.812V224.535z" data-original="#dae0e7"/>
+	<path fill="#fff" d="M140.629 224.535H256v105.582H140.629z" data-original="#ffffff"/>
+	<circle cx="198.314" cy="150.418" r="31.465" fill="#ffb4b3" transform="rotate(-76.7 198.375 150.454)" data-original="#ffb4b3"/>
+	<path d="M282.57 118.953h62.93v20.977h-62.93zm0 41.953h62.93v20.976h-62.93zM435 319.629H256l-20.977 26.221L256 372.07h179z" data-original="#233952" fill="#233952"/>
+	<path fill="#3d5168" d="M77 319.629h179v52.441H77z" data-original="#3d5168"/>
+</svg>
