@@ -377,7 +377,9 @@ article {
   width: 105px;
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
   font-size: 12px;
   font-weight: 300;
 }
@@ -679,4 +681,22 @@ footer {
 
 .material-symbols-outlined {
   height: 20px !important;
+}
+.cv-embed {
+  width: 960px;
+  aspect-ratio: 0.70695;
+}
+
+.download-btn {
+  padding: 12px 24px;
+  background-color: #0077ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #005ad1;
 }
