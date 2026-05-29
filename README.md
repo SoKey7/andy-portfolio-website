@@ -1,6 +1,6 @@
 # andy-portfolio-website
 
-Bienvenue sur mon portfolio !  
+Bienvenue sur mon [portfolio](https://sokey7.github.io/andy-portfolio-website/) !  
 Ce site présente mes projets, mes compétences et mon parcours en informatique.
 
 ## 🚀 Contenu
