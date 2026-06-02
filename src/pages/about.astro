@@ -1,37 +1,80 @@
 ---
-import Head from "../components/Head.astro";
-import Header from "../components/Header.astro";
+import Layout from '../layouts/Layout.astro';
+const base = import.meta.env.BASE_URL;
 ---
 
-<html>
-	<Head />
-	<body>
-	 	<Header />
-		
-		<section>
-			<article>
-				<div id="about-card-page" class="bubble rectangular-bubble page">
-					<header>
-						<h2>À propos</h2>
-					</header>
-					<section>
-						<p>Passionné par la <strong>programmation</strong> et l'<strong>innovation</strong>, je m'appelle <strong>Andy</strong>. Actuellement étudiant en <strong>L2 MIASHS</strong> (Méthodes Informatiques Appliquées aux Sciences Humaines et Sociales), je me spécialise dans le <strong>développement d'applications</strong>, l'<strong>analyse de données</strong> et l'<strong>intelligence artificielle</strong> (IA).</p>
-						<div class="caption">
-							<p>Mon parcours académique est complété par des <strong>auto-formations</strong> sur des plateformes telles que <strong>OpenClassrooms</strong> et <strong>SoloLearn</strong>, où j'ai acquis une solide maîtrise des langages comme <strong>Python</strong>, <strong>Java</strong>, <strong>HTML</strong>, <strong>CSS</strong> et <strong>JavaScript</strong>. Ces compétences m'ont permis de concevoir des sites web interactifs et de développer des solutions logicielles adaptées à des besoins concrets.</p>
-							<div class="side-images-caption">
-								<a href="https://www.sololearn.com/fr/profile/26622567">
-									<img class="images-caption" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeqCMDpLAWZuONJ7f4NEU7aeHqOFGNDfSeng&s" alt=SoloLearn>
-								</a>
-								<a href="https://openclassrooms.com/fr">
-									<img class="images-caption" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWE46gZpaLuyOga6wukdfpvAMer95iGX5r5g&s" alt="OpenClassrooms">
-								</a>
-							</div>
+<Layout title="À propos">
+	<section>
+		<article>
+			<div id="about-card-page" class="bubble rectangular-bubble page">
+				<header>
+					<h2>À propos</h2>
+				</header>
+				<section>
+					<p>
+						Passionné par la <strong>programmation</strong> et l'<strong
+							>innovation</strong
+						>, je m'appelle <strong>Andy</strong>. Actuellement étudiant en <strong
+							>L2 MIASHS</strong
+						> (Méthodes Informatiques Appliquées aux Sciences Humaines et Sociales),
+						je me spécialise dans le <strong
+							>développement d'applications</strong
+						>, l'<strong>analyse de données</strong> et l'<strong
+							>intelligence artificielle</strong
+						> (IA).
+					</p>
+					<div class="caption">
+						<p>
+							Mon parcours académique est complété par des <strong
+								>auto-formations</strong
+							> sur des plateformes telles que <strong>OpenClassrooms</strong> et
+							<strong>SoloLearn</strong>, où j'ai acquis une solide maîtrise des
+							langages comme <strong>Python</strong>, <strong>Java</strong>, <strong
+								>HTML</strong
+							>, <strong>CSS</strong> et <strong>JavaScript</strong>. Ces
+							compétences m'ont permis de concevoir des sites web interactifs et
+							de développer des solutions logicielles adaptées à des besoins
+							concrets.
+						</p>
+						<div class="side-images-caption">
+							<a href="https://www.sololearn.com/fr/profile/26622567">
+								<img
+									class="images-caption"
+									src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeqCMDpLAWZuONJ7f4NEU7aeHqOFGNDfSeng&s"
+									alt="SoloLearn"
+								/>
+							</a>
+							<a href="https://openclassrooms.com/fr">
+								<img
+									class="images-caption"
+									src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWE46gZpaLuyOga6wukdfpvAMer95iGX5r5g&s"
+									alt="OpenClassrooms"
+								/>
+							</a>
 						</div>
-						<p><strong>Le sport a toujours occupé une place importante dans ma vie.</strong> J'ai pratiqué le basketball jusqu'en 2023, un sport qui m'a permis de développer l'esprit d'équipe, la discipline et la persévérance. Depuis 2024, je me consacre au jujitsu, un art martial qui m'aide à renforcer ma concentration, ma maîtrise de soi et ma résilience face aux défis. Ces expériences sportives m'ont inculqué des valeurs essentielles que j'applique au quotidien, tant dans ma vie personnelle que professionnelle.</p>
-						<p>Mon objectif est de <strong>poursuivre ma carrière dans le domaine de l'ingénierie logicielle</strong> et de m'orienter vers le <strong>développement d'applications intelligentes</strong>. Mon rêve à court terme est de partir en <strong>mobilité internationale en L3 MIAGE</strong> afin de renforcer mes compétences dans un contexte global et de m'ouvrir à de nouvelles perspectives.</p>
-					</section>
-				</div>
-			</article>
-		</section>
-	</body>
-</html>
+					</div>
+					<p>
+						<strong
+							>Le sport a toujours occupé une place importante dans ma vie.</strong
+						> J'ai pratiqué le basketball jusqu'en 2023, un sport qui m'a permis de
+						développer l'esprit d'équipe, la discipline et la persévérance. Depuis
+						2024, je me consacre au jujitsu, un art martial qui m'aide à renforcer
+						ma concentration, ma maîtrise de soi et ma résilience face aux défis.
+						Ces expériences sportives m'ont inculqué des valeurs essentielles que
+						j'applique au quotidien, tant dans ma vie personnelle que professionnelle.
+					</p>
+					<p>
+						Mon objectif est de <strong
+							>poursuivre ma carrière dans le domaine de l'ingénierie logicielle</strong
+						> et de m'orienter vers le <strong
+							>développement d'applications intelligentes</strong
+						>. Mon rêve à court terme est de partir en <strong
+							>mobilité internationale en L3 MIAGE</strong
+						> afin de renforcer mes compétences dans un contexte global et de m'ouvrir
+						à de nouvelles perspectives.
+					</p>
+				</section>
+			</div>
+		</article>
+	</section>
+</Layout>

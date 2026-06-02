@@ -1,5 +1,5 @@
 ---
-const { title = "Portfolio" } = Astro.props;
+const { title = "Portfolio", base } = Astro.props;
 ---
 
 <head lang="fr">
@@ -8,12 +8,17 @@ const { title = "Portfolio" } = Astro.props;
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Feuille de Style -->
-  <link rel="stylesheet" href="/reset.css" />
-  <link rel="stylesheet" href="/style.css" />
+  <!-- Feuilles de style -->
+  <link rel="stylesheet" href={`${base}styles/reset.css`} />
+  <link rel="stylesheet" href={`${base}styles/style.css`} />
 
-  <!-- Icône du Site -->
-  <link rel="icon" type="image/svg+xml" href="/images/logo/logo.svg" sizes="32x32" />
+  <!-- Icône du site -->
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href={`${base}images/logo/logo.svg`}
+    sizes="32x32"
+  />
 
   <!-- Polices -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />

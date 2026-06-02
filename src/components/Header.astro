@@ -1,22 +1,33 @@
-<header id="main-header">
-  <a href="/">
-    <div class="logo">
-      <img src="/images/logo/logo.svg" alt="Logo" width="40" height="40" />
-      <span>Andy D.</span>
-    </div>
-  </a>
+---
+const { base } = Astro.props;
+---
 
-  <nav>
-    <ul>
-      <li>
-        <a href="/"><span>Accueil</span></a>
-      </li>
-      <li>
-        <a href="/contact"><span>Contact</span></a>
-      </li>
-      <li>
-        <a href="/cv"><span class="cv-circle">CV</span></a>
-      </li>
-    </ul>
-  </nav>
+<header id="main-header">
+	<a href={base}>
+		<div class="logo">
+			<img
+				src={`${base}images/logo/logo.svg`}
+				alt="Logo"
+				width="40"
+				height="40"
+			/>
+			<span>Andy D.</span>
+		</div>
+	</a>
+
+	<nav>
+		<ul>
+			<li>
+				<a href={base}><span>Accueil</span></a>
+			</li>
+
+			<li>
+				<a href={`${base}contact`}><span>Contact</span></a>
+			</li>
+
+			<li>
+				<a href={`${base}cv`}><span class="cv-circle">CV</span></a>
+			</li>
+		</ul>
+	</nav>
 </header>

@@ -1,276 +1,268 @@
 ---
-import Head from "../components/Head.astro";
-import Header from "../components/Header.astro";
+import Layout from '../layouts/Layout.astro';
+const base = import.meta.env.BASE_URL;
 ---
 
-<html lang="fr">
-  <Head />
-  
-  <body>
-    <Header />
-
-    <section>
-      <article>
-        <a href="index.html">
-          <div id="profile-card" class="bubble squared-bubble">
-            <div class="image-container">
-              <img
-                src="images/sticker/sticker-1.png"
-                alt="Sticker 1"
-                width="160"
-                height="160"
-              />
-            </div>
-            <h2>Andy D.</h2>
-            <h3>Étudiant en licence</h3>
-          </div>
-        </a>
-        <div id="about-card" class="bubble rectangular-bubble">
-          <header>
-            <a href="about.html">
-              <h2>À propos</h2>
-            </a>
-          </header>
-          <section>
-            <p>
-              Passionné par la programmation et l'innovation, je m'appelle
-              <strong>Andy</strong>. Étudiant en <strong>L3 MIAGE</strong>, je
-              me spécialise en développement, analyse de données, et IA, avec
-              une expérience pratique en Python, Java et création web.
-            </p>
-          </section>
-          <section class="language-section">
-            <h2>Langue</h2>
-            <div class="language">
-              <div class="language-circle">
-                <h4>Créole</h4>
-                <div class="flag">
-                  <img
-                    src="images/flag/mq.svg"
-                    alt="Martinique"
-                    width="32"
-                    height="32"
-                  />
-                </div>
-              </div>
-              <div class="language-circle">
-                <h4>Français</h4>
-                <div class="flag">
-                  <img
-                    src="images/flag/fr.svg"
-                    alt="France"
-                    width="32"
-                    height="32"
-                  />
-                </div>
-              </div>
-              <div class="language-circle">
-                <h4>Anglais</h4>
-                <div class="flag">
-                  <img
-                    src="images/flag/uk.svg"
-                    alt="Royaume-Uni"
-                    width="32"
-                    height="32"
-                  />
-                </div>
-              </div>
-                <div class="language-circle">
-                <h4>Portugais brésilien</h4>
-                <div class="flag">
-                  <img
-                    src="images/flag/br.svg"
-                    alt="Brésil"
-                    width="32"
-                    height="32"
-                  />
-                </div>
-              </div>
-
-            </div>
-          </section>
-          <section>
-            <a href="about.html">
-              <button class="read-more">En savoir plus</button>
-            </a>
-          </section>
-        </div>
-      </article>
-      <article>
-        <div id="skills-card" class="bubble rectangular-bubble">
-          <header>
-            <h2>Compétences</h2>
-          </header>
-          <section>
-            <table>
-              <thead>
-                <tr>
-                  <th>Programmation</th>
-                  <th>Analyse de données</th>
-                  <th>Développement web</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td data-percentage="100%"><span>Python</span></td>
-                  <td data-percentage="70%">Excel</td>
-                  <td data-percentage="80%">HTML</td>
-                </tr>
-                <tr>
-                  <td data-percentage="50%">JavaScript</td>
-                  <td data-percentage="95%">Google Sheets</td>
-                  <td data-percentage="85%">CSS</td>
-                </tr>
-                <tr>
-                  <td data-percentage="70%">Java</td>
-                  <td></td>
-                  <td data-percentage="30%">React</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-        </div>
-        <div id="experiences-card" class="bubble squared-bubble">
-          <header>
-            <a href="experiences.html">
-              <h2>Expériences</h2>
-            </a>
-          </header>
-          <section>
-            <div id="vertical-scroll-bar">
-              <div class="center-line vertical">
-                <div class="down-arrow">
-                  <img
-                    src="images/tools/downArrow.svg"
-                    alt="Veille"
-                    width="32"
-                    height="32"
-                  />
-                </div>
-                <div class="node vertical" style="top: 0px">
-                  <span class="description vertical-theme"
-                    >Création de sites web dynamiques</span
-                  >
-                  <span class="description vertical-date">Décembre 2024</span>
-                </div>
-                <div class="node vertical" style="top: 150px">
-                  <span class="description vertical-theme"
-                    >Reconnaissance d'images</span
-                  >
-                  <span class="description vertical-date">Septembre 2024</span>
-                </div>
-                <div class="node vertical" style="top: 300px">
-                  <span class="description vertical-theme"
-                    >Automatisation de tâches</span
-                  >
-                  <span class="description vertical-date">Mars 2024</span>
-                </div>
-                <div class="node vertical" style="top: 450px">
-                  <span class="description vertical-theme"
-                    >Expérience en gestion au sein du restaurant familial</span
-                  >
-                  <span class="description vertical-date">Juillet 2024</span>
-                </div>
-                <div class="node vertical" style="top: 600px">
-                  <span class="description vertical-theme"
-                    >Travail à la Collectivité Territoriale de Martinique</span
-                  >
-                  <span class="description vertical-date">Juillet 2023</span>
-                </div>
-                <div class="node vertical" style="top: 750px">
-                  <span class="description vertical-theme"
-                    >Présidence du premier RotaKids de Martinique</span
-                  >
-                  <span class="description vertical-date">Juin 2022</span>
-                </div>
-                <div class="node vertical" style="top: 900px">
-                  <span class="description vertical-theme"
-                    >Stage au Grand Port Maritime de la Martinique</span
-                  >
-                  <span class="description vertical-date">Février 2020</span>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-      </article>
-      <article>
-        <div id="veille-card" class="bubble squared-bubble">
-          <header>
-            <a href="veille.html">
-              <h2>Veille</h2>
-            </a>
-          </header>
-          <section class="veille-section">
-            <div class="veille">
-              <h3>Les crypto-monnaies :</h3>
-              <span
-                >L'innovation qui bouscule l'économie et ouvre les portes de
-                l'avenir financier.</span
-              >
-            </div>
-          </section>
-          <section>
-            <a href="veille.html">
-              <button class="read-more">En savoir plus</button>
-            </a>
-          </section>
-        </div>
-        <div id="projets-card" class="bubble rectangular-bubble">
-          <header>
-            <a href="projets.html">
-              <h2>Projets</h2>
-            </a>
-          </header>
-          <section class="project-section">
-            <a href="projets.html#maze-project">
-              <div class="project">
-                <h3>Maze</h3>
-                <img
-                  src="images/projects/maze.svg"
-                  alt="Maze"
-                  width="96"
-                  height="96"
-                />
-              </div>
-            </a>
-            <a href="projets.html#tender-project">
-              <div class="project">
-                <h3>Tender</h3>
-                <img
-                  src="images/projects/tenderIcon.svg"
-                  alt="Tender"
-                  width="96"
-                  height="96"
-                />
-              </div>
-            </a>
-            <a href="projets.html#backtest-strategy-project">
-              <div class="project">
-                <h3>Backtest Stategy</h3>
-                <img
-                  src="images/projects/crypto.svg"
-                  alt="Bitcoin"
-                  width="96"
-                  height="96"
-                />
-              </div>
-            </a>
-            <a href="projets.html#portfolio-project">
-              <div class="project">
-                <h3>Portfolio</h3>
-                <img
-                  src="images/projects/portfolio.svg"
-                  alt="Portfolio"
-                  width="96"
-                  height="96"
-                />
-              </div>
-            </a>
-          </section>
-        </div>
-      </article>
-    </section>
-
-  </body>
-</html>
+<Layout title="Accueil">
+	<section>
+		<article>
+			<a href={base}>
+				<div id="profile-card" class="bubble squared-bubble">
+					<div class="image-container">
+						<img
+							src={`${base}images/sticker/sticker-1.png`}
+							alt="Sticker 1"
+							width="160"
+							height="160"
+						/>
+					</div>
+					<h2>Andy D.</h2>
+					<h3>Étudiant en licence</h3>
+				</div>
+			</a>
+			<div id="about-card" class="bubble rectangular-bubble">
+				<header>
+					<a href={`${base}about`}>
+						<h2>À propos</h2>
+					</a>
+				</header>
+				<section>
+					<p>
+						Passionné par la programmation et l'innovation, je m'appelle
+						<strong>Andy</strong>. Étudiant en <strong>L3 MIAGE</strong>, je me
+						spécialise en développement, analyse de données, et IA, avec une
+						expérience pratique en Python, Java et création web.
+					</p>
+				</section>
+				<section class="language-section">
+					<h2>Langue</h2>
+					<div class="language">
+						<div class="language-circle">
+							<h4>Créole</h4>
+							<div class="flag">
+								<img
+									src={`${base}images/flag/mq.svg`}
+									alt="Martinique"
+									width="32"
+									height="32"
+								/>
+							</div>
+						</div>
+						<div class="language-circle">
+							<h4>Français</h4>
+							<div class="flag">
+								<img
+									src={`${base}images/flag/fr.svg`}
+									alt="France"
+									width="32"
+									height="32"
+								/>
+							</div>
+						</div>
+						<div class="language-circle">
+							<h4>Anglais</h4>
+							<div class="flag">
+								<img
+									src={`${base}images/flag/uk.svg`}
+									alt="Royaume-Uni"
+									width="32"
+									height="32"
+								/>
+							</div>
+						</div>
+						<div class="language-circle">
+							<h4>Portugais</h4>
+							<div class="flag">
+								<img
+									src={`${base}images/flag/br.svg`}
+									alt="Brésil"
+									width="32"
+									height="32"
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<a href={`${base}about`}>
+						<button class="read-more">En savoir plus</button>
+					</a>
+				</section>
+			</div>
+		</article>
+		<article>
+			<div id="skills-card" class="bubble rectangular-bubble">
+				<header>
+					<h2>Compétences</h2>
+				</header>
+				<section>
+					<table>
+						<thead>
+							<tr>
+								<th>Programmation</th>
+								<th>Analyse de données</th>
+								<th>Développement web</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td data-percentage="100%"><span>Python</span></td>
+								<td data-percentage="70%">Excel</td>
+								<td data-percentage="80%">HTML</td>
+							</tr>
+							<tr>
+								<td data-percentage="50%">JavaScript</td>
+								<td data-percentage="95%">Google Sheets</td>
+								<td data-percentage="85%">CSS</td>
+							</tr>
+							<tr>
+								<td data-percentage="70%">Java</td>
+								<td></td>
+								<td data-percentage="30%">React</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+			</div>
+			<div id="experiences-card" class="bubble squared-bubble">
+				<header>
+					<a href={`${base}experiences`}>
+						<h2>Expériences</h2>
+					</a>
+				</header>
+				<section>
+					<div id="vertical-scroll-bar">
+						<div class="center-line vertical">
+							<div class="down-arrow">
+								<img
+									src={`${base}images/tools/downArrow.svg`}
+									alt="Veille"
+									width="32"
+									height="32"
+								/>
+							</div>
+							<div class="node vertical" style="top: 0px">
+								<span class="description vertical-theme"
+									>Création de sites web dynamiques</span
+								>
+								<span class="description vertical-date">Décembre 2024</span>
+							</div>
+							<div class="node vertical" style="top: 150px">
+								<span class="description vertical-theme"
+									>Reconnaissance d'images</span
+								>
+								<span class="description vertical-date">Septembre 2024</span>
+							</div>
+							<div class="node vertical" style="top: 300px">
+								<span class="description vertical-theme"
+									>Automatisation de tâches</span
+								>
+								<span class="description vertical-date">Mars 2024</span>
+							</div>
+							<div class="node vertical" style="top: 450px">
+								<span class="description vertical-theme"
+									>Expérience en gestion au sein du restaurant familial</span
+								>
+								<span class="description vertical-date">Juillet 2024</span>
+							</div>
+							<div class="node vertical" style="top: 600px">
+								<span class="description vertical-theme"
+									>Travail à la Collectivité Territoriale de Martinique</span
+								>
+								<span class="description vertical-date">Juillet 2023</span>
+							</div>
+							<div class="node vertical" style="top: 750px">
+								<span class="description vertical-theme"
+									>Présidence du premier RotaKids de Martinique</span
+								>
+								<span class="description vertical-date">Juin 2022</span>
+							</div>
+							<div class="node vertical" style="top: 900px">
+								<span class="description vertical-theme"
+									>Stage au Grand Port Maritime de la Martinique</span
+								>
+								<span class="description vertical-date">Février 2020</span>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</article>
+		<article>
+			<div id="veille-card" class="bubble squared-bubble">
+				<header>
+					<a href={`${base}veille`}>
+						<h2>Veille</h2>
+					</a>
+				</header>
+				<section class="veille-section">
+					<div class="veille">
+						<h3>Les crypto-monnaies :</h3>
+						<span
+							>L'innovation qui bouscule l'économie et ouvre les portes de
+							l'avenir financier.</span
+						>
+					</div>
+				</section>
+				<section>
+					<a href={`${base}veille`}>
+						<button class="read-more">En savoir plus</button>
+					</a>
+				</section>
+			</div>
+			<div id="projets-card" class="bubble rectangular-bubble">
+				<header>
+					<a href={`${base}projets`}>
+						<h2>Projets</h2>
+					</a>
+				</header>
+				<section class="project-section">
+					<a href={`${base}projets#maze-project`}>
+						<div class="project">
+							<h3>Maze</h3>
+							<img
+								src={`${base}images/projects/maze.svg`}
+								alt="Maze"
+								width="96"
+								height="96"
+							/>
+						</div>
+					</a>
+					<a href={`${base}projets#tender-project`}>
+						<div class="project">
+							<h3>Tender</h3>
+							<img
+								src={`${base}images/projects/tenderIcon.svg`}
+								alt="Tender"
+								width="96"
+								height="96"
+							/>
+						</div>
+					</a>
+					<a href={`${base}projets#backtest-strategy-project`}>
+						<div class="project">
+							<h3>Backtest Strategy</h3>
+							<img
+								src={`${base}images/projects/crypto.svg`}
+								alt="Bitcoin"
+								width="96"
+								height="96"
+							/>
+						</div>
+					</a>
+					<a href={`${base}projets#portfolio-project`}>
+						<div class="project">
+							<h3>Portfolio</h3>
+							<img
+								src={`${base}images/projects/portfolio.svg`}
+								alt="Portfolio"
+								width="96"
+								height="96"
+							/>
+						</div>
+					</a>
+				</section>
+			</div>
+		</article>
+	</section>
+</Layout>

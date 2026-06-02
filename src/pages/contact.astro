@@ -1,40 +1,65 @@
 ---
-import Head from "../components/Head.astro";
-import Header from "../components/Header.astro";
+import Layout from '../layouts/Layout.astro';
+const base = import.meta.env.BASE_URL;
 ---
 
-<html>
-	<Head />
-
-	<body id="contact-card-body">
-	 	<Header />
-		
-		<section>
-			<div class="bubble framed-bubble page">
-				<header>
-					<h2>Contact</h2>
-				</header>
-				<section>
-					<textarea id="objet" class="message-box" placeholder="Objet du message..."></textarea>
-					<div class="message-container">
-					    <textarea id="message" class="message-box" placeholder="Envoyer un message..."></textarea>
-					    <button id="send-button"><img src="images/tools/send.svg" alt="Logo" width="40" height="40"></button>
-					</div>
-					<p id="success-message">Votre message va être envoyé avec succès !</p>
-				</section>
-				<footer>
-					<a href="https://www.linkedin.com/in/andy-d-abadie-de-lurbe-34bb39295">
-						<img class="footer-logo" src="images/logo/linkedInLogo.svg" alt="LinkedIn" width="40" height="40">
-					</a>
-					<a href="https://www.instagram.com/andy.ddl_">
-						<img class="footer-logo" src="images/logo/instagramLogo.svg" alt="Instagram" width="40" height="40">
-					</a>
-					<a href="https://annuaire.univ-paris1.fr/ent/Andy.dAbadie-de-Lurbe@etu">
-						<img class="footer-logo" src="images/logo/paris1Logo.svg" alt="Instagram" width="40" height="40">
-					</a>
-				</footer>
-			</div>
-		</section>
-		<script type="text/javascript" src="script.js"></script>
-	</body>
-</html>
+<Layout title="Contact" bodyId="contact-card-body">
+	<section>
+		<div class="bubble framed-bubble page">
+			<header>
+				<h2>Contact</h2>
+			</header>
+			<section>
+				<textarea
+					id="objet"
+					class="message-box"
+					placeholder="Objet du message..."></textarea>
+				<div class="message-container">
+					<textarea
+						id="message"
+						class="message-box"
+						placeholder="Envoyer un message..."></textarea>
+					<button id="send-button"
+						><img
+							src={`${base}images/tools/send.svg`}
+							alt="Logo"
+							width="40"
+							height="40"
+						/></button
+					>
+				</div>
+				<p id="success-message">Votre message va être envoyé avec succès !</p>
+			</section>
+			<footer>
+				<a href="https://www.linkedin.com/in/andy-d-abadie-de-lurbe-34bb39295">
+					<img
+						class="footer-logo"
+						src={`${base}images/logo/linkedInLogo.svg`}
+						alt="LinkedIn"
+						width="40"
+						height="40"
+					/>
+				</a>
+				<a href="https://www.instagram.com/andy.ddl_">
+					<img
+						class="footer-logo"
+						src={`${base}images/logo/instagramLogo.svg`}
+						alt="Instagram"
+						width="40"
+						height="40"
+					/>
+				</a>
+				<a href="https://annuaire.univ-paris1.fr/ent/Andy.dAbadie-de-Lurbe@etu">
+					<img
+						class="footer-logo"
+						src={`${base}images/logo/paris1Logo.svg`}
+						alt="Université de Paris 1 Panthéon-Sorbonne"
+						width="40"
+						height="40"
+					/>
+				</a>
+			</footer>
+		</div>
+	</section>
+	<script type="text/javascript" src="script.js"></script>
+</Layout>

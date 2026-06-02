@@ -1,0 +1,14 @@
+---
+import Head from '../components/Head.astro';
+import Header from '../components/Header.astro';
+const { title, bodyId } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+
+<html lang="fr">
+	<Head title={title} base={base} />
+	<body id={bodyId}>
+		<Header base={base} />
+		<slot />
+	</body>
+</html>

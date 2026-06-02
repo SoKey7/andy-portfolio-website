@@ -1,145 +1,243 @@
 ---
-import Head from "../components/Head.astro";
-import Header from "../components/Header.astro";
+import Layout from '../layouts/Layout.astro';
+const base = import.meta.env.BASE_URL;
 ---
 
-<html>
-	<Head />
-
-	<body id="projects-card-body">
-	 	<Header />
-		
-		<section>
-			<article>
-				<a href="#maze-project">
-					<div class="bubble squared-bubble projects-card-page">
-						<header>
-							<h2>Maze</h2>
-						</header>
-						<section>
-							<div>
-								<img src="images/projects/maze.svg" alt="Maze" width="160" height="160"></img>
-							</div>
-						</section>
-					</div>
-				</a>
-				<a href="#tender-project">
-					<div class="bubble squared-bubble projects-card-page">
-						<header>
-							<h2>Tender</h2>
-						</header>
-						<section>
-							<div>
-								<img src="images/projects/tenderIcon.svg" alt="Maze" width="160" height="160"></img>
-							</div>
-						</section>
-					</div>
-				</a>
-				<a href="#backtest-strategy-project">
-					<div class="bubble squared-bubble projects-card-page">
-						<header>
-							<h2>Backtest Strategy</h2>
-						</header>
-						<section>
-							<div>
-								<img src="images/projects/crypto.svg" alt="Maze" width="160" height="160"></img>
-							</div>
-						</section>
-					</div>
-				</a>
-				<a href="#portfolio-project">
-					<div class="bubble squared-bubble projects-card-page">
-						<header>
-							<h2>Portfolio</h2>
-						</header>
-						<section>
-							<div>
-								<img src="images/projects/portfolio.svg" alt="Maze" width="160" height="160"></img>
-							</div>
-						</section>
-					</div>
-				</a>
-			</article>
-			<hr id="maze-project">
-			<article>
-				<div class="bubble squared-bubble page">
+<Layout title="Projets" bodyId="projects-card-body">
+	<section>
+		<article>
+			<a href={`${base}projets#maze-project`}>
+				<div class="bubble squared-bubble projects-card-page">
 					<header>
 						<h2>Maze</h2>
 					</header>
 					<section>
 						<div>
-							<img src="images/projects/maze.svg" alt="Maze" width="160" height="160"></img>
+							<img
+								src={`${base}images/projects/maze.svg`}
+								alt="Maze"
+								width="160"
+								height="160"
+							/>
 						</div>
 					</section>
 				</div>
-				<div class="bubble framed-bubble page">
-					<section>
-						<p>Dans ce projet, j'ai conçu un labyrinthe interactif où l'objectif est de récupérer des pièces ou de trouver la sortie pour gagner.</p>
-						<p>Le joueur doit faire face à plusieurs défis :</p>
-						<ul>
-							<li><strong>Ennemi poursuivant :</strong> Un ennemi mobile traque constamment le joueur.</li>
-							<li><strong>Pièges invisibles :</strong> Ces pièges sont disséminés dans le labyrinthe et ne se révèlent qu'une fois déclenchés.</li>
-							<li><strong>Système de vie :</strong> Le joueur dispose de points de vie et peut en récupérer au cours du jeu. Cependant, au bout de 3 pièges déclenchés ou si l'ennemi l'attrape, la partie se termine.</li>
-						</ul>
-						<p>Ce projet a permis de mettre en pratique mes compétences en programmation, gestion des événements de jeu et logique algorithmique.</p>
-						<div>
-							<img src="images/projects/maze.png" alt="Maze" height="160"></img>
-						</div>
-					</section>
-				</div>
-			</article>
-			<hr id="tender-project">
-			<article>
-				<div class="bubble squared-bubble page">
+			</a>
+			<a href={`${base}projets#tender-project`}>
+				<div class="bubble squared-bubble projects-card-page">
 					<header>
 						<h2>Tender</h2>
 					</header>
 					<section>
 						<div>
-							<img src="images/projects/tenderIcon.svg" alt="Tender Icon" width="160" height="160"></img>
+							<img
+								src={`${base}images/projects/tenderIcon.svg`}
+								alt="Tender Icon"
+								width="160"
+								height="160"
+							/>
 						</div>
 					</section>
 				</div>
-				<div class="bubble framed-bubble page">
-					<section>
-						<p>J'ai réalisé un site web innovant appelé Tender, dont l'objectif est de faciliter le choix d'un restaurant pour un groupe d'amis. Le site permet de croiser les préférences culinaires de chaque membre du groupe afin de proposer le restaurant qui convient le mieux à tous.</p>
-						<p>Les fonctionnalités clés incluent :</p>
-						<ul>
-							<li><strong>Système de vote collaboratif :</strong> Chaque participant peut indiquer ses préférences alimentaires.</li>
-							<li><strong>Algorithme de correspondance :</strong> Les préférences sont analysées pour trouver le restaurant qui satisfait le plus grand nombre de personnes.</li>
-							<li><strong>Interface intuitive :</strong> Un design simple et fluide qui rend l'expérience utilisateur agréable et accessible.</li>
-						</ul>
-						<p>Ce projet m'a permis de développer mes compétences en développement web full-stack, algorithmes de recommandation et conception d'interfaces utilisateur (UI/UX).</p>
-						<div>
-							<img src="images/projects/tender.png" alt="Tender Interface" height="160"></img>
-						</div>
-					</section>
-				</div>
-			</article>
-			<hr id="backtest-strategy-project">
-			<article>
-				<div class="bubble squared-bubble page">
+			</a>
+			<a href={`${base}projets#backtest-strategy-project`}>
+				<div class="bubble squared-bubble projects-card-page">
 					<header>
 						<h2>Backtest Strategy</h2>
 					</header>
 					<section>
 						<div>
-							<img src="images/projects/crypto.svg" alt="Crypto" width="160" height="160"></img>
+							<img
+								src={`${base}images/projects/crypto.svg`}
+								alt="Crypto"
+								width="160"
+								height="160"
+							/>
 						</div>
 					</section>
 				</div>
-				<div class="bubble framed-bubble page">
+			</a>
+			<a href={`${base}projets#portfolio-project`}>
+				<div class="bubble squared-bubble projects-card-page">
+					<header>
+						<h2>Portfolio</h2>
+					</header>
 					<section>
-						<p>J'ai mis en place un backtest de stratégie de trading visant à évaluer l'efficacité de différentes approches sur les marchés des cryptomonnaies. Ce projet m'a permis d'automatiser l'analyse de mes stratégies de trading et de mieux comprendre leur rentabilité avant de les appliquer en conditions réelles.</p>
-						<p>Outils et technologies :</p>
-						<ul>
-							<li><strong>API Binance :</strong> Récupération des données de marché en temps réel.</li>
-							<li><strong>Pandas :</strong> Analyse des données historiques et gestion des DataFrames pour le calcul des indicateurs.</li>
-							<li><strong>Automatisation Python :</strong> Création d'un script d'automatisation des calculs de performance de la stratégie.</li>
-						</ul>
-						<p>Grâce à ce projet, j'ai approfondi mes compétences en analyse de données financières, en programmation d'algorithmes de trading et en backtesting de stratégies. Ce projet m'a permis de mieux maîtriser la prise de décision en trading tout en rationalisant le processus d'évaluation des performances.</p>
-						<div class="code-window">
-							<pre><code>
+						<div>
+							<img
+								src={`${base}images/projects/portfolio.svg`}
+								alt="Portfolio"
+								width="160"
+								height="160"
+							/>
+						</div>
+					</section>
+				</div>
+			</a>
+		</article>
+		<hr id="maze-project" />
+		<article>
+			<div class="bubble squared-bubble page">
+				<header>
+					<h2>Maze</h2>
+				</header>
+				<section>
+					<div>
+						<img
+							src={`${base}images/projects/maze.svg`}
+							alt="Maze"
+							width="160"
+							height="160"
+						/>
+					</div>
+				</section>
+			</div>
+			<div class="bubble framed-bubble page">
+				<section>
+					<p>
+						Dans ce projet, j'ai conçu un labyrinthe interactif où l'objectif
+						est de récupérer des pièces ou de trouver la sortie pour gagner.
+					</p>
+					<p>Le joueur doit faire face à plusieurs défis :</p>
+					<ul>
+						<li>
+							<strong>Ennemi poursuivant :</strong> Un ennemi mobile traque constamment
+							le joueur.
+						</li>
+						<li>
+							<strong>Pièges invisibles :</strong> Ces pièges sont disséminés dans
+							le labyrinthe et ne se révèlent qu'une fois déclenchés.
+						</li>
+						<li>
+							<strong>Système de vie :</strong> Le joueur dispose de points de vie
+							et peut en récupérer au cours du jeu. Cependant, au bout de 3 pièges
+							déclenchés ou si l'ennemi l'attrape, la partie se termine.
+						</li>
+					</ul>
+					<p>
+						Ce projet a permis de mettre en pratique mes compétences en
+						programmation, gestion des événements de jeu et logique
+						algorithmique.
+					</p>
+					<div>
+						<img
+							src={`${base}images/projects/maze.png`}
+							alt="Maze"
+							height="160"
+						/>
+					</div>
+				</section>
+			</div>
+		</article>
+		<hr id="tender-project" />
+		<article>
+			<div class="bubble squared-bubble page">
+				<header>
+					<h2>Tender</h2>
+				</header>
+				<section>
+					<div>
+						<img
+							src={`${base}images/projects/tenderIcon.svg`}
+							alt="Tender Icon"
+							width="160"
+							height="160"
+						/>
+					</div>
+				</section>
+			</div>
+
+			<div class="bubble framed-bubble page">
+				<section>
+					<p>
+						J'ai réalisé un site web innovant appelé Tender, dont l'objectif est
+						de faciliter le choix d'un restaurant pour un groupe d'amis. Le site
+						permet de croiser les préférences culinaires de chaque membre du
+						groupe afin de proposer le restaurant qui convient le mieux à tous.
+					</p>
+					<p>Les fonctionnalités clés incluent :</p>
+					<ul>
+						<li>
+							<strong>Système de vote collaboratif :</strong> Chaque participant peut
+							indiquer ses préférences alimentaires.
+						</li>
+						<li>
+							<strong>Algorithme de correspondance :</strong> Les préférences sont
+							analysées pour trouver le restaurant qui satisfait le plus grand nombre
+							de personnes.
+						</li>
+						<li>
+							<strong>Interface intuitive :</strong> Un design simple et fluide qui
+							rend l'expérience utilisateur agréable et accessible.
+						</li>
+					</ul>
+					<p>
+						Ce projet m'a permis de développer mes compétences en développement
+						web full-stack, algorithmes de recommandation et conception
+						d'interfaces utilisateur (UI/UX).
+					</p>
+					<div>
+						<img
+							src={`${base}images/projects/tender.png`}
+							alt="Tender Interface"
+							height="160"
+						/>
+					</div>
+				</section>
+			</div>
+		</article>
+
+		<hr id="backtest-strategy-project" />
+		<article>
+			<div class="bubble squared-bubble page">
+				<header>
+					<h2>Backtest Strategy</h2>
+				</header>
+				<section>
+					<div>
+						<img
+							src={`${base}images/projects/crypto.svg`}
+							alt="Crypto"
+							width="160"
+							height="160"
+						/>
+					</div>
+				</section>
+			</div>
+
+			<div class="bubble framed-bubble page">
+				<section>
+					<p>
+						J'ai mis en place un backtest de stratégie de trading visant à
+						évaluer l'efficacité de différentes approches sur les marchés des
+						cryptomonnaies. Ce projet m'a permis d'automatiser l'analyse de mes
+						stratégies de trading et de mieux comprendre leur rentabilité avant
+						de les appliquer en conditions réelles.
+					</p>
+					<p>Outils et technologies :</p>
+					<ul>
+						<li>
+							<strong>API Binance :</strong> Récupération des données de marché en
+							temps réel.
+						</li>
+						<li>
+							<strong>Pandas :</strong> Analyse des données historiques et gestion
+							des DataFrames pour le calcul des indicateurs.
+						</li>
+						<li>
+							<strong>Automatisation Python :</strong> Création d'un script d'automatisation
+							des calculs de performance de la stratégie.
+						</li>
+					</ul>
+					<p>
+						Grâce à ce projet, j'ai approfondi mes compétences en analyse de
+						données financières, en programmation d'algorithmes de trading et en
+						backtesting de stratégies. Ce projet m'a permis de mieux maîtriser
+						la prise de décision en trading tout en rationalisant le processus
+						d'évaluation des performances.
+					</p>
+					<div class="code-window">
+						<pre><code>
 								# Importations standard
 								import numpy as np
 								from datetime import datetime, timedelta
@@ -154,42 +252,74 @@ import Header from "../components/Header.astro";
 
 								...
 					</code></pre>
-						</div>
-					</section>
-				</div>
-			</article>
-			<hr id="portfolio-project">
-			<article>
-				<div class="bubble squared-bubble page">
-					<header>
-						<h2>Portfolio</h2>
-					</header>
-					<section>
-						<div>
-							<img src="images/projects/portfolio.svg" alt="Maze" width="160" height="160"></img>
-						</div>
-					</section>
-				</div>
-				<div class="bubble framed-bubble page">
-					<header>
-						<h2>Portfolio</h2>
-					</header>
-					<section>
-						<p>La création de mon portfolio est un projet majeur qui reflète l'ensemble de mes compétences techniques et créatives. Ce site a pour objectif de présenter mes expériences professionnelles, projets personnels et compétences clés de manière claire et interactive.</p>
-						<p>Outils et technologies :</p>
-						<ul>
-							<li><strong>Mise en valeur de mon parcours :</strong> Regrouper mes expériences, compétences et projets notables.</li>
-							<li><strong>Interface utilisateur (UI) moderne et responsive :</strong> Assurer une navigation fluide et agréable sur tous les appareils (mobile, tablette, desktop).</li>
-							<li><strong>Personnalisation et créativité :</strong> Refléter ma personnalité et mon approche professionnelle à travers un design unique et soigné.</li>
-						</ul>
-						<p>Ce projet me permet de perfectionner mes compétences en développement front-end, de renforcer ma créativité et de maîtriser la conception d'interfaces utilisateurs (UI/UX).</p>
-						<p>Le portfolio lui-même est une démonstration vivante de mon savoir-faire, ce qui en fait un projet majeur dans mon parcours.</p>
-						<div>
-							<img src="images/projects/portfolio.png" alt="Portfolio Interface" height="160"></img>
-						</div>
-					</section>
-				</div>
-			</article>
-		</section>
-	</body>
-</html>
+					</div>
+				</section>
+			</div>
+		</article>
+
+		<hr id="portfolio-project" />
+		<article>
+			<div class="bubble squared-bubble page">
+				<header>
+					<h2>Portfolio</h2>
+				</header>
+				<section>
+					<div>
+						<img
+							src={`${base}images/projects/portfolio.svg`}
+							alt="Portfolio"
+							width="160"
+							height="160"
+						/>
+					</div>
+				</section>
+			</div>
+
+			<div class="bubble framed-bubble page">
+				<header>
+					<h2>Portfolio</h2>
+				</header>
+				<section>
+					<p>
+						La création de mon portfolio est un projet majeur qui reflète
+						l'ensemble de mes compétences techniques et créatives. Ce site a
+						pour objectif de présenter mes expériences professionnelles, projets
+						personnels et compétences clés de manière claire et interactive.
+					</p>
+					<p>Outils et technologies :</p>
+					<ul>
+						<li>
+							<strong>Mise en valeur de mon parcours :</strong> Regrouper mes expériences,
+							compétences et projets notables.
+						</li>
+						<li>
+							<strong>Interface utilisateur (UI) moderne et responsive :</strong
+							> Assurer une navigation fluide et agréable sur tous les appareils (mobile,
+							tablette, desktop).
+						</li>
+						<li>
+							<strong>Personnalisation et créativité :</strong> Refléter ma personnalité
+							et mon approche professionnelle à travers un design unique et soigné.
+						</li>
+					</ul>
+					<p>
+						Ce projet me permet de perfectionner mes compétences en
+						développement front-end, de renforcer ma créativité et de maîtriser
+						la conception d'interfaces utilisateurs (UI/UX).
+					</p>
+					<p>
+						Le portfolio lui-même est une démonstration vivante de mon
+						savoir-faire, ce qui en fait un projet majeur dans mon parcours.
+					</p>
+					<div>
+						<img
+							src={`${base}images/projects/portfolio.png`}
+							alt="Portfolio Interface"
+							height="160"
+						/>
+					</div>
+				</section>
+			</div>
+		</article>
+	</section>
+</Layout>

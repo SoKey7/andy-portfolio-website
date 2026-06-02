@@ -1,16 +1,14 @@
 ---
-import Head from "../components/Head.astro";
-import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+const base = import.meta.env.BASE_URL;
 ---
 
-<html>
-	<Head />	
-
-	<body>
-	 	<Header />
-		
-		<section>
-			<iframe class="cv-embed" loading="lazy" src="https://www.canva.com/design/DAHDpsdiBbk/WpiaTyqCiXqwCHVNL8HpDA/view?embed" allowfullscreen="allowfullscreen"></iframe>
-		</section>
-	</body>
-</html>
+<Layout title="CV">
+  <section>
+    <iframe
+      class="cv-embed"
+      loading="lazy"
+      src="https://www.canva.com/design/DAHDpsdiBbk/WpiaTyqCiXqwCHVNL8HpDA/view?embed"
+      allowfullscreen="allowfullscreen"></iframe>
+  </section>
+</Layout>

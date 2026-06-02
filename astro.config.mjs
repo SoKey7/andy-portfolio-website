@@ -2,6 +2,5 @@ import { defineConfig } from 'astro/config';
 
 export default defineConfig({
     site: 'https://sokey7.github.io',
-    base: '/andy-portfolio-website',
-    output: 'static',
+    base: '/andy-portfolio-website/'
 });
