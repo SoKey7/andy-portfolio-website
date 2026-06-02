@@ -1,36 +1,33 @@
 ---
-const { title = "Portfolio", base } = Astro.props;
+const { title = 'Portfolio', base } = Astro.props;
+import '../styles/global.css';
 ---
 
 <head lang="fr">
-  <title>{title}</title>
+	<title>{title}</title>
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Feuilles de style -->
-  <link rel="stylesheet" href={`${base}styles/reset.css`} />
-  <link rel="stylesheet" href={`${base}styles/style.css`} />
+	<!-- Icône du site -->
+	<link
+		rel="icon"
+		type="image/svg+xml"
+		href={`${base}images/logo/logo.svg`}
+		sizes="32x32"
+	/>
 
-  <!-- Icône du site -->
-  <link
-    rel="icon"
-    type="image/svg+xml"
-    href={`${base}images/logo/logo.svg`}
-    sizes="32x32"
-  />
+	<!-- Polices -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Outfit:wght@100..900&display=swap"
+		rel="stylesheet"
+	/>
 
-  <!-- Polices -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Outfit:wght@100..900&display=swap"
-    rel="stylesheet"
-  />
-
-  <!-- Icônes -->
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back"
-  />
+	<!-- Icônes -->
+	<link
+		rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back"
+	/>
 </head>
